@@ -6,6 +6,7 @@ public class DS_LC_000_Median_of_Two_Sorted_Array {
     }
 
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+        double n =6.7d;
         int n1 = nums1.length;
         int n2 = nums2.length;
         int[] arr = new int[nums1.length + nums2.length];
@@ -18,6 +19,6 @@ public class DS_LC_000_Median_of_Two_Sorted_Array {
             }
         }
 
-           return
+           return n;
     }
 }
