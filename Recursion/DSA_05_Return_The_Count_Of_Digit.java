@@ -1,7 +1,7 @@
 package Recursion;
 
 // The following algorithm gives the count of any digit using recursion
-public class DS_05_Return_The_Count_Of_Digit {
+public class DSA_05_Return_The_Count_Of_Digit {
     public static void main(String[] args) {
         int num = 6005090;
         System.out.println("The number of zeros present in the number is : " + getCount(num, 0));

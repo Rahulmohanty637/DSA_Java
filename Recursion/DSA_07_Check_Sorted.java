@@ -1,6 +1,6 @@
 package Recursion;
 
-public class DS_07_Check_Sorted {
+public class DSA_07_Check_Sorted {
     public static void main(String[] args) {
         int [] arr = {3, 7, 13, 29,26,44};
         System.out.println("IS IT SORTED OR NOT : "+ srotedOrNot(arr, 0));

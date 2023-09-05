@@ -1,6 +1,6 @@
 package Recursion;
 
-public class DS_06_Number_Of_Steps {
+public class DSA_06_Number_Of_Steps {
     public static void main(String[] args) {
         int num = 14;
         System.out.println(getSteps(num, 0));

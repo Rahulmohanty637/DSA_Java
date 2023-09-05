@@ -1,6 +1,6 @@
 package Recursion;
 
-public class DS_08_Rotated_Binary_Search {
+public class DSA_08_Rotated_Binary_Search {
     public static void main(String[] args) {
         int[] arr = {5, 6, 7, 8, 9, 1, 2, 3};
         int num = searchInRotatedArray(arr, 9, 0, arr.length - 1);

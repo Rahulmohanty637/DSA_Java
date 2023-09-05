@@ -1,6 +1,6 @@
 package Recursion;
 
-public class DS_02_Sum_of_Digits {
+public class DSA_02_Sum_of_Digits {
     public static void main(String[] args) {
         System.out.println(sumOfDigits(5389));
     }

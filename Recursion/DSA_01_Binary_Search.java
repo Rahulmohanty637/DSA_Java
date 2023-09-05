@@ -1,6 +1,6 @@
 package Recursion;
 
-public class DS_01_Binary_Search {
+public class DSA_01_Binary_Search {
     public static void main(String[] args) {
         int[] arr = {26, 59, 74, 106, 138, 222, 271, 380, 791, 995};
         int start = 0;

@@ -1,6 +1,6 @@
 package Recursion;
 
-public class DS_04_Palindrome {
+public class DSA_04_Palindrome {
     public static void main(String[] args) {
         int num = 1468641;
         int placeValue = getHighestPlaceValue(num);
