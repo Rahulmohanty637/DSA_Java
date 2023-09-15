@@ -5,19 +5,21 @@ import java.util.Arrays;
 public class DSA_12_Merge_Sort {
     public static void main(String[] args) {
         int[] arr = {5, 7, 3, 9, 4, 0};
-        System.out.println(Arrays.toString(mergeSort(arr, 0, arr.length-1)));
+        System.out.println(Arrays.toString(mergeSort(arr)));
     }
 
-    static int[] mergeSort(int[] arr, int start, int end) {
+    static int[] mergeSort(int[] arr) {
         if (arr.length <= 1) {
             return arr;
         }
-        int mid = start + (end - start) / 2;
-        int[] left = mergeSort(arr, start, mid);
-        int[] right = mergeSort(arr, mid, arr.length-1);
+        int mid = arr.length / 2;
+        int[] left = mergeSort(Arrays.copyOfRange(arr, 0, mid));
+        int[] right = mergeSort(Arrays.copyOfRange(arr, mid, arr.length));
 
         return merge(left, right);
     }
+
+
 
     static int[] merge(int[] first, int[] second) {
         int[] mergedArray = new int[first.length + second.length];
