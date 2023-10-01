@@ -3,7 +3,7 @@ package Array;
 //Given an unsorted integer array nums, return the smallest missing positive integer.
 //You must implement an algorithm that runs in O(n) time and uses O(1) auxiliary space.
 
-public class DS_LC_111_First_Missing_Positive {
+public class DSA_LC_111_First_Missing_Positive {
     public static void main(String[] args) {
         int [] nums = {7,8,9,11,12};
         int res = firstMissingPositive(nums);

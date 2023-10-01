@@ -1,6 +1,6 @@
 package Array;
 
-public class DS_LC_000_Median_of_Two_Sorted_Array {
+public class DSA_LC_001_Median_of_Two_Sorted_Array {
     public static void main(String[] args) {
 
     }

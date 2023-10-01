@@ -1,6 +1,6 @@
 package Array;
 
-public class DS_LC_011_Kth_Largest_Element {
+public class DSA_LC_011_Kth_Largest_Element {
     public static void main(String[] args) {
 
     }

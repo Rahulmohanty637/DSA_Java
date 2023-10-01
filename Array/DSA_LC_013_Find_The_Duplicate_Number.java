@@ -3,7 +3,7 @@ package Array;
 //Given an array of integers nums containing n + 1 integers where each integer is in the range [1, n] inclusive.
 //There is only one repeated number in nums, return this repeated number.
 //You must solve the problem without modifying the array nums and uses only constant extra space.
-public class DS_LC_013_Find_The_Duplicate_Number {
+public class DSA_LC_013_Find_The_Duplicate_Number {
     public static void main(String[] args) {
         int[] nums = {3, 1, 3, 4, 2};
         int res = findDuplicate(nums);
