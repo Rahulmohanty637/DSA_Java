@@ -1,6 +1,6 @@
-package Recursion;
+package String;
 
-public class DSA_14_Substring {
+public class DSA_01_Substring {
     public static void main(String[] args) {
         skipChar("", "cbaabdhaa");
         System.out.println(skipChar2("cbaabdhaa"));
