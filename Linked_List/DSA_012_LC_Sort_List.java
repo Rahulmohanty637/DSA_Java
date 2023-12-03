@@ -1,8 +1,6 @@
 package Linked_List;
 
-import java.util.List;
-
-public class DSA_012_Sort_List {
+public class DSA_012_LC_Sort_List {
 
     public ListNode sortList(ListNode head) {
         if (head == null || head.next == null) {

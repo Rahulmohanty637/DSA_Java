@@ -1,8 +1,6 @@
 package Linked_List;
 
-import java.util.List;
-
-public class DSA_004_Reverse_Linked_List {
+public class DSA_004_LC_Reverse_Linked_List {
     ListNode tail;
 
     //Using Recursion
