@@ -24,7 +24,7 @@ public class DSA_005_LC_Palindrome_Linked_List {
             slow = slow.next;
         }
         return true;
-        
+
     }
 
 
