@@ -3,7 +3,7 @@ package Problems.Array;
 public class DSA_011_Maximum_Subarray {
     public int maxSubArray(int[] nums) {
         int max = Integer.MIN_VALUE;
-        
+
         // Brute Force
         // for(int i = 0; i < nums.length; i++){
         //     int sum = 0;
