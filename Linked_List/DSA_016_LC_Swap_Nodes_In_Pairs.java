@@ -1,8 +1,6 @@
 package Linked_List;
 
-import java.util.List;
-
-public class DSA_015_LC_Swap_Nodes_In_Pairs {
+public class DSA_016_LC_Swap_Nodes_In_Pairs {
     public ListNode swapPairs(ListNode head) {
         if (head == null || head.next == null){
             return head;

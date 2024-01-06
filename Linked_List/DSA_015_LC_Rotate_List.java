@@ -1,6 +1,6 @@
 package Linked_List;
 
-public class DAS_015_Rotate_List {
+public class DSA_015_LC_Rotate_List {
     public ListNode rotateRight(ListNode head, int k) {
         if (head == null || head.next == null || k == 0) {
             return head;
