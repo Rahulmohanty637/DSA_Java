@@ -1,6 +1,6 @@
 package Problems;
 
-public class DSA_LC_Power_of_Power_of_Three{
+public class DSA_LC_Power_of_Three {
         public boolean isPowerOfThree(int n) {
             if (n == 0) {
                 return false;
