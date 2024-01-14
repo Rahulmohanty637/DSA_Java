@@ -22,6 +22,13 @@ public class CustomStack {
         return true;
     }
 
+    public int popData() throws Exception{
+        if (isEmpty()){
+            throw new Exception("Cannot pop from empty stack");
+        }
+        return data[ptr--];
+    }
+
     private boolean isFull() {
         return ptr == data.length - 1;
     }
