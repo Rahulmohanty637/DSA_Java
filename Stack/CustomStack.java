@@ -22,11 +22,18 @@ public class CustomStack {
         return true;
     }
 
-    public int popData() throws Exception{
+    public int popData() throws StackException{
         if (isEmpty()){
-            throw new Exception("Cannot pop from empty stack");
+            throw new StackException("Cannot pop from empty stack");
         }
         return data[ptr--];
+    }
+
+    public int peekData() throws StackException{
+        if (isEmpty()){
+            throw new StackException("Cannot peek from empty stack");
+        }
+        return data[ptr];
     }
 
     private boolean isFull() {
