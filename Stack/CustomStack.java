@@ -15,6 +15,7 @@ public class CustomStack {
 
     public boolean pushData(int item) {
         if (isFull()) {
+            System.out.println("Stack is full");
             return false;
         }
         ptr++;
