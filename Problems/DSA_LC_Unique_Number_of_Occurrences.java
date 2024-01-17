@@ -1,10 +1,10 @@
 package Problems;
 
-import java.util.Arrays;
+import java.util.*;
 
 public class DSA_LC_Unique_Number_of_Occurrences {
 
-    public static boolean uniqueOccurrences(int[] arr) {
+    public static boolean bruteuniqueOccurrences(int[] arr) {
         Arrays.sort(arr);
         int[] count = {0, 0, 0, 0, 0};
         int j = 0;
@@ -36,6 +36,20 @@ public class DSA_LC_Unique_Number_of_Occurrences {
 
     public static void main(String[] args) {
         int[] arr = {1, 2, 2, 1, 1, 3};
-        System.out.println(uniqueOccurrences(arr));
+        System.out.println(bruteuniqueOccurrences(arr));
+    }
+
+    public boolean uniqueOccurrences(int[] arr) {
+        Map<Integer, Integer> freq = new HashMap<>();
+        for (int x : arr) {
+            freq.put(x, freq.getOrDefault(x, 0) + 1);
+        }
+
+        Set<Integer> s = new HashSet<>();
+        for (int x : freq.values()) {
+            s.add(x);
+        }
+
+        return freq.size() == s.size();
     }
 }
