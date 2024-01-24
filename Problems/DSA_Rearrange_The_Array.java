@@ -7,20 +7,21 @@ public class DSA_Rearrange_The_Array {
 
     }
 
-    public static int[] rearrangeArray(int[] arr) {
-        int n = arr.length;
-        int first = arr[0];
-        int last = arr[n - 1];
-        while (first < last) {
-            if (first > 0) {
-                first++;
-            } else if (last < 0) {
-                last++;
+    public static void rearrangeArray(int[] arr) {
+        int i = 0, j = 0;
+        while (j < arr.length) {
+            if (arr[j] >= 0) {
+                j++;
             }
-            if (first < 0 && last > 0) {
-                
+            else {
+                for (int k = j; k > i; k--) {
+                    int temp = arr[k];
+                    arr[k] = arr[k - 1];
+                    arr[k - 1] = temp;
+                }
+                i++;
+                j++;
             }
         }
-        return arr;
     }
 }
