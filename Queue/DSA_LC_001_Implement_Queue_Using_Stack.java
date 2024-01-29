@@ -2,6 +2,11 @@ package Queue;
 
 import java.util.Stack;
 
+// To implement a Queue using two stacks, we have to jiggle the item from one stack to another
+// Push the items in first stack and to remove the item, transfer all the items to second stack from first stack. Then remove pop the item from second stack.
+
+
+
 public class DSA_LC_001_Implement_Queue_Using_Stack {
     private Stack<Integer> first;
     private Stack<Integer> second;
