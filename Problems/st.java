@@ -1,8 +1,10 @@
+package Problems;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-public class Main {
+public class st {
     public static List<Integer> findNumbersInArray(int[] arr) {
         int maxNum = findMax(arr);
         Set<Integer> result = new HashSet<>();
