@@ -1,6 +1,6 @@
 package Linked_List;
 
-public class DSA_006_Intersection_of_Linked_List {
+public class DSA_006_LC_Intersection_of_Linked_List {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         if (headA == null || headB == null) return null;
 
