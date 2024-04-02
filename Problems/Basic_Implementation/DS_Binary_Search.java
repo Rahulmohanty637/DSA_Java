@@ -1,4 +1,4 @@
-package Array;
+package Problems.Basic_Implementation;
 // Order Agnostic Binary Search
 public class DS_Binary_Search {
 

@@ -1,4 +1,4 @@
-package Array;
+package Problems.Basic_Implementation;
 
 public class DS_02_2D_Array {
     public static void main(String[] args) {

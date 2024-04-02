@@ -47,4 +47,79 @@ public class DSA_Subset_via_Iteration {
         }
         return outerList;
     }
+
+    public static class DSA_LC_023_House_Robber {
+        public static int rob(int[] nums) {
+            int odd = 0;
+            int eve = 0;
+            for (int i = 0; i < nums.length; i += 2) {
+                odd += nums[i];
+            }
+            for (int i = 1; i < nums.length; i += 2) {
+                System.out.println(eve);
+                eve += nums[i];
+            }
+    //        System.out.println(eve);
+    //        System.out.println(odd);
+            if (odd < eve) {
+                return eve;
+            } else {
+                return odd;
+            }
+        }
+
+        public static void main(String[] args) {
+            int[] arr = {1,2};
+            System.out.println(rob(arr));
+        }
+    }
+
+    public static class DSA_LC_022_Maximum_Product_Subarray {
+        public int maxProduct(int[] arr) {
+            int prod1 = arr[0], prod2 = arr[0], result = arr[0];
+
+            for (int i = 1; i < arr.length; i++) {
+                int temp = Math.max(arr[i], Math.max(prod1 * arr[i], prod2 * arr[i]));
+                prod2 = Math.min(arr[i], Math.min(prod1 * arr[i], prod2 * arr[i]));
+                prod1 = temp;
+
+                result = Math.max(result, prod1);
+            }
+            return result;
+        }
+    }
+
+    public static class DSA_LC_021_Maximum_Subarray {
+        public int maxSubArray(int[] nums) {
+            int max = Integer.MIN_VALUE;
+
+            // Brute Force
+            // for(int i = 0; i < nums.length; i++){
+            //     int sum = 0;
+            //     for(int j = i; j < nums.length; j++){
+            //         // for(int k = i; k <= j; k++){
+            //             sum += nums[j];
+            //         // }
+            //         max = Math.max(sum, max);
+            //     }
+            // }
+
+            //Optimal Solution
+            if (nums.length == 1) {
+                return nums[0];
+            }
+
+            int sum = 0;
+            for (int i = 0; i < nums.length; i++) {
+                sum += nums[i];
+                if (sum > max) {
+                    max = sum;
+                }
+                if (sum < 0) {
+                    sum = 0;
+                }
+            }
+            return max;
+        }
+    }
 }
